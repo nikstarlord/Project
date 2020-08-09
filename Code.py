@@ -49,7 +49,7 @@ def extraTree():
 
    #Model Preparation
     from sklearn.ensemble import ExtraTreesClassifier
-    clf4 = ExtraTreesClassifier(n_estimators=10,max_depth=10,min_samples_split=2,random_state=45)
+    clf4 = ExtraTreesClassifier(n_estimators=1000,max_depth=10,min_samples_split=2,random_state=45)
     clf4 = clf4.fit(X,np.ravel(y))
 
     # calculating accuracy----------------------------------------------------------------->
